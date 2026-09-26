@@ -1,0 +1,1312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unique Customized Gifts - Handcrafted Personalized Keepsakes</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            color: #1e1b19;
+            background: #fff8f5;
+            line-height: 1.6;
+        }
+
+        /* ===== TYPOGRAPHY ===== */
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Playfair Display', serif;
+            font-weight: 600;
+        }
+
+        p {
+            color: #49454c;
+        }
+
+        /* ===== LAYOUT & CONTAINER ===== */
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 48px;
+        }
+
+        .section {
+            padding: 56px 0;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 56px;
+            max-width: 672px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .section-label {
+            font-size: 11px;
+            font-weight: 600;
+            color: #7d562d;
+            text-transform: uppercase;
+            letter-spacing: 1.1px;
+            margin-bottom: 6px;
+        }
+
+        .section-title {
+            font-size: 40px;
+            color: #1e1b19;
+            line-height: 1.25;
+            margin-bottom: 6px;
+            letter-spacing: -0.6px;
+        }
+
+        .section-description {
+            font-size: 17px;
+            color: #49454c;
+            line-height: 1.65;
+        }
+
+        /* ===== HERO SECTION ===== */
+        .hero {
+            background: #fff8f5;
+            padding: 96px 48px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            width: 600px;
+            height: 600px;
+            border-radius: 50%;
+            background: radial-gradient(circle, rgba(255, 202, 152, 0.2) 0%, rgba(250, 242, 238, 0.4) 50%, rgba(250, 242, 238, 0) 100%);
+            transform: translate(-50%, -50%);
+            z-index: 0;
+        }
+
+        .hero-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 48px;
+            align-items: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero-left h1 {
+            font-size: 56px;
+            line-height: 1.2;
+            margin-bottom: 20px;
+            letter-spacing: -1.12px;
+        }
+
+        .hero-description {
+            font-size: 17px;
+            color: #49454c;
+            margin-bottom: 20px;
+            line-height: 1.65;
+        }
+
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(255, 220, 189, 0.5);
+            padding: 4px 12px;
+            border-radius: 9999px;
+            margin-bottom: 20px;
+            font-size: 11px;
+            font-weight: 600;
+            color: #2c1600;
+            letter-spacing: 0.55px;
+        }
+
+        .cta-group {
+            display: flex;
+            gap: 12px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 12px 32px;
+            border-radius: 12px;
+            border: none;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .btn-primary {
+            background: #380d00;
+            color: white;
+            box-shadow: 0px 4px 6px -1px rgba(0,0,0,0.1), 0px 2px 4px -2px rgba(0,0,0,0.1);
+        }
+
+        .btn-primary:hover {
+            background: #2a0a00;
+        }
+
+        .btn-secondary {
+            background: #eee7e3;
+            color: #1e1b19;
+        }
+
+        .btn-secondary:hover {
+            background: #e0d7cd;
+        }
+
+        .trust-badges {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(2px);
+            padding: 20px;
+            border-radius: 16px;
+            box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.05);
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 12px;
+            margin-top: 12px;
+        }
+
+        .trust-badge-item {
+            display: flex;
+            gap: 6px;
+            align-items: flex-start;
+        }
+
+        .trust-badge-icon {
+            width: 22px;
+            height: 22px;
+            flex-shrink: 0;
+        }
+
+        .trust-badge-text h4 {
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 2px;
+        }
+
+        .trust-badge-text p {
+            font-size: 13px;
+            color: #49454c;
+        }
+
+        .hero-right {
+            position: relative;
+        }
+
+        .hero-image-frame {
+            background: white;
+            padding: 8px;
+            border-radius: 16px;
+            box-shadow: 0px 20px 25px -5px rgba(0,0,0,0.1), 0px 8px 10px -6px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+
+        .hero-image {
+            width: 100%;
+            height: 480px;
+            border-radius: 12px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .featured-card {
+            position: absolute;
+            bottom: 24px;
+            left: 24px;
+            right: 24px;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(6px);
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1), 0px 4px 6px -4px rgba(0,0,0,0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .featured-left {
+            display: flex;
+            gap: 12px;
+            align-items: center;
+        }
+
+        .featured-icon {
+            width: 40px;
+            height: 40px;
+            background: #ffdcbd;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .featured-text h4 {
+            font-size: 11px;
+            color: #7d562d;
+            font-weight: 600;
+            letter-spacing: 0.55px;
+            margin-bottom: 4px;
+        }
+
+        .featured-text h3 {
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+
+        .featured-text p {
+            font-size: 13px;
+            color: #49454c;
+        }
+
+        .featured-link {
+            color: #7d562d;
+            font-weight: 500;
+            cursor: pointer;
+        }
+
+        /* ===== CATEGORIES SECTION ===== */
+        .categories-section {
+            background: #faf2ee;
+            padding: 56px 0;
+        }
+
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 24px;
+            margin-bottom: 32px;
+        }
+
+        .card {
+            background: white;
+            padding: 32px;
+            border-radius: 16px;
+            box-shadow: 0px 1px 1px rgba(0,0,0,0.05);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%;
+        }
+
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 12px;
+        }
+
+        .card-icon-bg {
+            width: 48px;
+            height: 48px;
+            background: #f4ece8;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .card-icon {
+            width: 24px;
+            height: 24px;
+        }
+
+        .card-badge {
+            background: rgba(255, 220, 189, 0.6);
+            padding: 4px 10px;
+            border-radius: 9999px;
+            font-size: 11px;
+            font-weight: 600;
+            color: #2c1600;
+            white-space: nowrap;
+        }
+
+        .card-title {
+            font-size: 22px;
+            font-weight: 600;
+            margin: 12px 0 12px 0;
+            line-height: 1.3;
+        }
+
+        .card-description {
+            font-size: 15px;
+            color: #49454c;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        .card-feature {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 20px;
+            border-top: 1px solid #f0e8e4;
+        }
+
+        .card-feature-text {
+            font-size: 13px;
+            font-weight: 500;
+            color: #7d562d;
+        }
+
+        .card-feature-icon {
+            width: 13.5px;
+            height: 13.5px;
+        }
+
+        .benefits-bar {
+            background: white;
+            padding: 32px;
+            border-radius: 16px;
+            box-shadow: 0px 1px 1px rgba(0,0,0,0.05);
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 24px;
+        }
+
+        .benefit-item {
+            display: flex;
+            gap: 12px;
+        }
+
+        .benefit-icon {
+            width: 35px;
+            height: 40px;
+            flex-shrink: 0;
+        }
+
+        .benefit-text h4 {
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+
+        .benefit-text p {
+            font-size: 13px;
+            color: #49454c;
+            line-height: 1.5;
+        }
+
+        /* ===== HOW IT WORKS SECTION ===== */
+        .steps-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+            margin-top: 24px;
+        }
+
+        .step-card {
+            background: #faf2ee;
+            padding: 32px;
+            border-radius: 16px;
+            box-shadow: 0px 1px 1px rgba(0,0,0,0.05);
+        }
+
+        .step-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 12px;
+        }
+
+        .step-number {
+            font-size: 40px;
+            font-weight: 600;
+            color: rgba(125, 86, 45, 0.3);
+            line-height: 1;
+        }
+
+        .step-icon-bg {
+            width: 40px;
+            height: 40px;
+            background: #eee7e3;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .step-icon {
+            width: 16px;
+            height: 16px;
+        }
+
+        .step-title {
+            font-size: 22px;
+            font-weight: 600;
+            margin: 12px 0;
+        }
+
+        .step-description {
+            font-size: 15px;
+            color: #49454c;
+            line-height: 1.6;
+        }
+
+        .quick-inquiry {
+            text-align: center;
+            margin-top: 32px;
+            padding: 24px;
+            color: #49454c;
+        }
+
+        .quick-inquiry strong {
+            color: #7d562d;
+            font-weight: 600;
+        }
+
+        /* ===== REVIEWS SECTION ===== */
+        .reviews-section {
+            background: #faf2ee;
+            padding: 56px 0;
+        }
+
+        .reviews-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+            margin: 24px 0;
+        }
+
+        .review-card {
+            background: white;
+            padding: 32px;
+            border-radius: 16px;
+            box-shadow: 0px 1px 1px rgba(0,0,0,0.05);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .stars {
+            display: flex;
+            gap: 6px;
+            margin-bottom: 12px;
+        }
+
+        .star {
+            width: 16px;
+            height: 16px;
+        }
+
+        .review-text {
+            font-size: 15px;
+            color: #1e1b19;
+            font-style: italic;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        .review-author {
+            border-top: 1px solid #f0e8e4;
+            padding-top: 12px;
+        }
+
+        .review-name {
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+
+        .review-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .review-occasion {
+            font-size: 13px;
+            color: #49454c;
+        }
+
+        .review-tag {
+            background: #f4ece8;
+            padding: 2px 8px;
+            border-radius: 9999px;
+            font-size: 11px;
+            color: #49454c;
+            font-weight: 500;
+        }
+
+        .note-banner {
+            background: rgba(238, 231, 227, 0.6);
+            padding: 12px;
+            border-radius: 12px;
+            text-align: center;
+            font-size: 13px;
+            color: #49454c;
+            margin-top: 24px;
+        }
+
+        /* ===== CONTACT & FORM SECTION ===== */
+        .contact-section {
+            padding: 56px 48px;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1.4fr;
+            gap: 24px;
+            align-items: start;
+        }
+
+        .contact-left {
+            display: flex;
+            flex-direction: column;
+            gap: 32px;
+        }
+
+        .contact-info h3 {
+            font-size: 40px;
+            line-height: 1.25;
+            margin-bottom: 20px;
+            letter-spacing: -0.6px;
+        }
+
+        .contact-info p {
+            font-size: 15px;
+            line-height: 1.6;
+            margin-bottom: 24px;
+        }
+
+        .contact-cards {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .contact-card {
+            background: #faf2ee;
+            padding: 20px;
+            border-radius: 16px;
+            display: flex;
+            gap: 20px;
+            align-items: flex-start;
+        }
+
+        .contact-card-icon {
+            width: 48px;
+            height: 48px;
+            background: #f4ece8;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .contact-card-icon.highlight {
+            background: #ffdcbd;
+        }
+
+        .contact-card-icon img {
+            width: 18px;
+            height: 18px;
+        }
+
+        .contact-card-text h4 {
+            font-size: 11px;
+            color: #49454c;
+            font-weight: 600;
+            letter-spacing: 0.88px;
+            text-transform: uppercase;
+            margin-bottom: 4px;
+        }
+
+        .contact-card-text.special h4 {
+            color: #7d562d;
+        }
+
+        .contact-card-text p, .contact-card-text h3 {
+            font-size: 16px;
+            font-weight: 600;
+            color: #1e1b19;
+        }
+
+        .contact-card-link {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .contact-card-phone {
+            font-size: 22px;
+            font-weight: 600;
+            color: #1e1b19;
+        }
+
+        .contact-card-link .arrow {
+            width: 16px;
+            height: 16px;
+        }
+
+        .trust-assurance {
+            background: white;
+            padding: 20px;
+            border-radius: 16px;
+            box-shadow: 0px 1px 1px rgba(0,0,0,0.05);
+            display: flex;
+            gap: 12px;
+        }
+
+        .trust-assurance-icon {
+            width: 16px;
+            height: 20px;
+            flex-shrink: 0;
+        }
+
+        .trust-assurance-text {
+            font-size: 13px;
+            color: #1e1b19;
+        }
+
+        .trust-assurance-text strong {
+            font-weight: 600;
+        }
+
+        /* ===== FORM ===== */
+        .form-box {
+            background: white;
+            padding: 56px;
+            border-radius: 24px;
+            box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1), 0px 4px 6px -4px rgba(0,0,0,0.1);
+        }
+
+        .form-header {
+            margin-bottom: 20px;
+        }
+
+        .form-label-small {
+            font-size: 11px;
+            font-weight: 600;
+            color: #7d562d;
+            letter-spacing: 0.55px;
+            margin-bottom: 4px;
+            display: block;
+        }
+
+        .form-title {
+            font-size: 28px;
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+
+        .form-description {
+            font-size: 13px;
+            color: #49454c;
+            line-height: 1.5;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-label {
+            display: block;
+            font-size: 13px;
+            font-weight: 600;
+            color: #1e1b19;
+            margin-bottom: 4px;
+        }
+
+        .form-input {
+            width: 100%;
+            padding: 12px 16px;
+            background: #faf2ee;
+            border: none;
+            border-radius: 12px;
+            font-size: 15px;
+            color: #1e1b19;
+            font-family: inherit;
+            transition: background 0.3s ease;
+        }
+
+        .form-input::placeholder {
+            color: rgba(73, 69, 76, 0.6);
+        }
+
+        .form-input:focus {
+            outline: none;
+            background: #f0e8e4;
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .form-submit {
+            background: #380d00;
+            color: white;
+            padding: 14px 32px;
+            border: none;
+            border-radius: 12px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+            width: 100%;
+            box-shadow: 0px 4px 6px -1px rgba(0,0,0,0.1), 0px 2px 4px -2px rgba(0,0,0,0.1);
+            transition: background 0.3s ease;
+        }
+
+        .form-submit:hover {
+            background: #2a0a00;
+        }
+
+        .form-disclaimer {
+            text-align: center;
+            font-size: 13px;
+            color: #49454c;
+            margin-top: 20px;
+        }
+
+        .form-message {
+            margin-top: 12px;
+            padding: 12px;
+            border-radius: 8px;
+            text-align: center;
+            font-size: 13px;
+            display: none;
+        }
+
+        .form-message.success {
+            background: #d4edda;
+            color: #155724;
+            display: block;
+        }
+
+        .form-message.error {
+            background: #f8d7da;
+            color: #721c24;
+            display: block;
+        }
+
+        /* ===== RESPONSIVE ===== */
+        @media (max-width: 1024px) {
+            .container {
+                padding: 0 32px;
+            }
+
+            .hero-content {
+                grid-template-columns: 1fr;
+            }
+
+            .cards-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .benefits-bar {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .steps-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .reviews-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .trust-badges {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 16px;
+            }
+
+            .section {
+                padding: 32px 0;
+            }
+
+            .section-title {
+                font-size: 32px;
+            }
+
+            .hero-left h1 {
+                font-size: 40px;
+            }
+
+            .cards-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .reviews-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+
+            .form-box {
+                padding: 32px;
+            }
+
+            .cta-group {
+                flex-direction: column;
+            }
+
+            .btn {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- ===== HERO SECTION ===== -->
+<div class="hero">
+    <div class="hero-content">
+        <div class="hero-left">
+            <div class="badge">✨ Handcrafted Bespoke Keepsakes • Est. 2026</div>
+            
+            <h1>Thoughtful, Personalized Gifts That Tell Your Unique Story</h1>
+            
+            <p class="hero-description">From custom engraved ceramic mugs to bespoke handcrafted wooden photo frames and curated celebration gift hampers, we turn your cherished memories into heirloom-quality personalized treasures for every milestone.</p>
+            
+            <div class="cta-group">
+                <button class="btn btn-primary" onclick="document.querySelector('.contact-section').scrollIntoView({behavior: 'smooth'})">
+                    Place an Order
+                    <span>→</span>
+                </button>
+                <button class="btn btn-secondary" onclick="document.querySelector('.categories-section').scrollIntoView({behavior: 'smooth'})">
+                    Explore Gift Collections
+                </button>
+            </div>
+
+            <div class="trust-badges">
+                <div class="trust-badge-item">
+                    <div class="trust-badge-icon">✋</div>
+                    <div class="trust-badge-text">
+                        <h4>100%</h4>
+                        <p>Hand-finished Detail</p>
+                    </div>
+                </div>
+                <div class="trust-badge-item">
+                    <div class="trust-badge-icon">🎉</div>
+                    <div class="trust-badge-text">
+                        <h4>1,200+</h4>
+                        <p>Happy Occasions</p>
+                    </div>
+                </div>
+                <div class="trust-badge-item">
+                    <div class="trust-badge-icon">👨‍🎨</div>
+                    <div class="trust-badge-text">
+                        <h4>Direct Artist</h4>
+                        <p>Care by Raghu Nandha</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-right">
+            <div class="hero-image-frame">
+                <img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=500&h=480&fit=crop" alt="Handcrafted ceramic mug, wooden frame, and luxury gift box" class="hero-image">
+                <div class="featured-card">
+                    <div class="featured-left">
+                        <div class="featured-icon">⭐</div>
+                        <div class="featured-text">
+                            <h4>Featured Suite</h4>
+                            <h3>Handcrafted Memory Set</h3>
+                            <p>Ceramic Mug, Walnut Frame & Keepsake Box</p>
+                        </div>
+                    </div>
+                    <div class="featured-link">Inquire →</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ===== CATEGORIES SECTION ===== -->
+<div class="categories-section">
+    <div class="container section">
+        <div class="section-header">
+            <div class="section-label">Artisanal Collections</div>
+            <h2 class="section-title">Personalized Keepsakes for Every Occasion</h2>
+            <p class="section-description">Explore our signature custom collections designed to celebrate birthdays, anniversaries, weddings, and milestones with personal artistry.</p>
+        </div>
+
+        <div class="cards-grid">
+            <div class="card">
+                <div>
+                    <div class="card-header">
+                        <div class="card-icon-bg">☕</div>
+                        <span class="card-badge">Best Seller</span>
+                    </div>
+                    <h3 class="card-title">Personalized Mugs & Drinkware</h3>
+                    <p class="card-description">Hand-finished ceramic and stainless-steel mugs with custom metallic calligraphy names, dates, or personal quotes.</p>
+                </div>
+                <div class="card-feature">
+                    <span class="card-feature-text">Custom Inscription</span>
+                    <span>✓</span>
+                </div>
+            </div>
+
+            <div class="card">
+                <div>
+                    <div class="card-header">
+                        <div class="card-icon-bg">🖼️</div>
+                        <span class="card-badge">Popular Keepsake</span>
+                    </div>
+                    <h3 class="card-title">Bespoke Photo Frames & Wooden Plaques</h3>
+                    <p class="card-description">Warm walnut and pine frames engraved with personalized anniversary messages, coordinate stamps, or family names.</p>
+                </div>
+                <div class="card-feature">
+                    <span class="card-feature-text">Solid Walnut & Oak</span>
+                    <span>✓</span>
+                </div>
+            </div>
+
+            <div class="card">
+                <div>
+                    <div class="card-header">
+                        <div class="card-icon-bg">🎁</div>
+                        <span class="card-badge">Celebrations</span>
+                    </div>
+                    <h3 class="card-title">Special Occasion Keepsakes</h3>
+                    <p class="card-description">Tailored presents for weddings, graduations, baby arrivals, and festival celebrations with custom wax-sealed packaging.</p>
+                </div>
+                <div class="card-feature">
+                    <span class="card-feature-text">Wax Seal & Ribbons</span>
+                    <span>✓</span>
+                </div>
+            </div>
+
+            <div class="card">
+                <div>
+                    <div class="card-header">
+                        <div class="card-icon-bg">💝</div>
+                        <span class="card-badge">Complete Sets</span>
+                    </div>
+                    <h3 class="card-title">Curated Luxury Gift Sets</h3>
+                    <p class="card-description">Harmonious gift hampers pairing custom drinkware, personalized stationery, scented candles, and artisan confections.</p>
+                </div>
+                <div class="card-feature">
+                    <span class="card-feature-text">Turnkey Curation</span>
+                    <span>✓</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="benefits-bar">
+            <div class="benefit-item">
+                <div class="benefit-icon">🎨</div>
+                <div class="benefit-text">
+                    <h4>Bespoke Customization</h4>
+                    <p>Every item tailored to your exact wording, photo, and preferences.</p>
+                </div>
+            </div>
+            <div class="benefit-item">
+                <div class="benefit-icon">👐</div>
+                <div class="benefit-text">
+                    <h4>Direct Artisan Care</h4>
+                    <p>Hand-inspected & crafted under personal supervision of Raghu Nandha.</p>
+                </div>
+            </div>
+            <div class="benefit-item">
+                <div class="benefit-icon">📦</div>
+                <div class="benefit-text">
+                    <h4>Thoughtful Packaging</h4>
+                    <p>Complimentary signature gift wrapping with personalized message cards.</p>
+                </div>
+            </div>
+            <div class="benefit-item">
+                <div class="benefit-icon">☎️</div>
+                <div class="benefit-text">
+                    <h4>Dedicated Guidance</h4>
+                    <p>Quick direct support and order confirmation via phone: 63802 93527.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ===== HOW IT WORKS SECTION ===== -->
+<div class="section">
+    <div class="container">
+        <div class="section-header">
+            <div class="section-label">Simple & Transparent</div>
+            <h2 class="section-title">How Custom Ordering Works</h2>
+            <p class="section-description">Bringing your personalized gift ideas to life in three effortless steps.</p>
+        </div>
+
+        <div class="steps-grid">
+            <div class="step-card">
+                <div class="step-header">
+                    <div class="step-number">01</div>
+                    <div class="step-icon-bg">🛍️</div>
+                </div>
+                <h3 class="step-title">Choose Your Gift</h3>
+                <p class="step-description">Browse our product categories and pick the canvas for your memory — whether a handcrafted mug, wooden frame, or gift set.</p>
+            </div>
+
+            <div class="step-card">
+                <div class="step-header">
+                    <div class="step-number">02</div>
+                    <div class="step-icon-bg">✍️</div>
+                </div>
+                <h3 class="step-title">Share Customization Details</h3>
+                <p class="step-description">Provide names, dates, preferred message, photo notes, or special color palettes via our simple form below.</p>
+            </div>
+
+            <div class="step-card">
+                <div class="step-header">
+                    <div class="step-number">03</div>
+                    <div class="step-icon-bg">✅</div>
+                </div>
+                <h3 class="step-title">Confirm & Handcraft</h3>
+                <p class="step-description">Raghu Nandha directly reviews your specifications, confirms your order details, and begins artisanal creation.</p>
+            </div>
+        </div>
+
+        <div class="quick-inquiry">
+            <p>Need a quick question answered first? <strong>Call Raghu Nandha at 63802 93527</strong></p>
+        </div>
+    </div>
+</div>
+
+<!-- ===== REVIEWS SECTION ===== -->
+<div class="reviews-section">
+    <div class="container section">
+        <div class="section-header">
+            <div class="section-label">Words of Appreciation</div>
+            <h2 class="section-title">Cherished Moments Shared by Our Customers</h2>
+            <p class="section-description">Placeholder experiences from patrons celebrating special milestones with Unique Customized Gifts.</p>
+        </div>
+
+        <div class="reviews-grid">
+            <div class="review-card">
+                <div>
+                    <div class="stars">
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                    </div>
+                    <p class="review-text">"The engraved ceramic mug and wooden frame set for my parents' 30th anniversary was breathtaking. The attention to detail in the calligraphy and wood finish made it unforgettable."</p>
+                </div>
+                <div class="review-author">
+                    <p class="review-name">Ananya S.</p>
+                    <div class="review-meta">
+                        <span class="review-occasion">Occasion: 30th Anniversary Gift</span>
+                        <span class="review-tag">Sample Review</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="review-card">
+                <div>
+                    <div class="stars">
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                    </div>
+                    <p class="review-text">"Raghu Nandha personally made sure the custom names and quotes on our team appreciation mugs were crisp and elegant. The packaging was immaculate!"</p>
+                </div>
+                <div class="review-author">
+                    <p class="review-name">Karthik R.</p>
+                    <div class="review-meta">
+                        <span class="review-occasion">Occasion: Corporate Milestones</span>
+                        <span class="review-tag">Sample Review</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="review-card">
+                <div>
+                    <div class="stars">
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                    </div>
+                    <p class="review-text">"Finding a truly personal gift box that didn't feel mass-produced was so refreshing. You can feel the craftsmanship in every single detail."</p>
+                </div>
+                <div class="review-author">
+                    <p class="review-name">Priya M.</p>
+                    <div class="review-meta">
+                        <span class="review-occasion">Occasion: Best Friend's Wedding</span>
+                        <span class="review-tag">Sample Review</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="note-banner">
+            ✨ All reviews shown are illustrative samples demonstrating customer satisfaction formats.
+        </div>
+    </div>
+</div>
+
+<!-- ===== CONTACT & ORDER FORM SECTION ===== -->
+<div class="contact-section" id="contact-form">
+    <div class="contact-grid">
+        <div class="contact-left">
+            <div class="contact-info">
+                <div style="margin-bottom: 8px;">
+                    <div class="section-label">Direct Contact</div>
+                </div>
+                <h3>Let's Create Your Custom Keepsake</h3>
+                <p>Have a custom inquiry, unique idea, or urgent celebration deadline? Call Raghu directly at 63802 93527 for quick guidance and design options.</p>
+            </div>
+
+            <div class="contact-cards">
+                <div class="contact-card">
+                    <div class="contact-card-icon">👨‍🎨</div>
+                    <div class="contact-card-text">
+                        <h4>Shop Owner & Artisan</h4>
+                        <p>Raghu Nandha</p>
+                    </div>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-card-icon highlight">☎️</div>
+                    <div class="contact-card-text special">
+                        <h4>Direct Phone</h4>
+                        <p class="contact-card-phone">63802 93527</p>
+                    </div>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-card-icon">🕐</div>
+                    <div class="contact-card-text">
+                        <h4>Studio Working Hours</h4>
+                        <p>Mon – Sat: 9:00 AM – 7:30 PM</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="trust-assurance">
+                <div class="trust-assurance-icon">✓</div>
+                <div class="trust-assurance-text">
+                    <strong>Bespoke Assurance:</strong> Clear transparent pricing is provided upon receiving your custom specifications. Digital proof confirmation is shared before final crafting begins.
+                </div>
+            </div>
+        </div>
+
+        <div class="form-box">
+            <div class="form-header">
+                <label class="form-label-small">Place an Order Inquiry</label>
+                <h2 class="form-title">Customization Request Form</h2>
+                <p class="form-description">Fill in the details below. We do not collect payment until design proofs are fully approved.</p>
+            </div>
+
+            <form id="customForm" onsubmit="return false;">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label class="form-label" for="name">Full Name *</label>
+                        <input type="text" id="name" name="name" class="form-input" placeholder="e.g., Deepika Sharma" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="phone">Phone Number *</label>
+                        <input type="tel" id="phone" name="phone" class="form-input" placeholder="e.g., 63802 93527" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label" for="email">Email Address *</label>
+                    <input type="email" id="email" name="email" class="form-input" placeholder="e.g., yourname@example.com" required>
+                </div>
+
+                <button type="submit" class="form-submit" onclick="submitForm()">
+                    Submit Order Request
+                    <span>→</span>
+                </button>
+
+                <div class="form-message" id="formMessage"></div>
+                <div class="form-disclaimer">✨ No payment is collected on this form. We confirm your mockup first.</div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script>
+    const APPSCRIPT_URL = "https://script.google.com/macros/s/AKfycbzECD2EPJDpgyIuocUAChpXD_u0Sw-5Wj0MjEdVlXk7EFPIyqNS-tmnNCgHv1eoHvgD9A/exec";
+
+    function submitForm() {
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const phone = document.getElementById('phone').value;
+        const messageEl = document.getElementById('formMessage');
+
+        // Validate fields
+        if (!name || !email || !phone) {
+            showError('Please fill in all fields.');
+            return false;
+        }
+
+        // Build URL with URLSearchParams (GET request)
+        const url = APPSCRIPT_URL + "?" + new URLSearchParams({
+            name: name,
+            email: email,
+            phone: phone
+        });
+
+        // Use fetch with GET and no-cors mode
+        fetch(url, {
+            method: "GET",
+            mode: "no-cors"
+        })
+        .then(() => showSuccess())
+        .catch(() => showError('Network error. Please try again.'));
+
+        return false;
+    }
+
+    function showSuccess() {
+        const messageEl = document.getElementById('formMessage');
+        messageEl.textContent = '✅ Order submitted successfully! Raghu will contact you soon.';
+        messageEl.classList.remove('error');
+        messageEl.classList.add('success');
+        
+        // Reset form
+        document.getElementById('customForm').reset();
+        
+        // Hide message after 5 seconds
+        setTimeout(() => {
+            messageEl.classList.remove('success');
+        }, 5000);
+    }
+
+    function showError(message) {
+        const messageEl = document.getElementById('formMessage');
+        messageEl.textContent = '❌ ' + (message || 'An error occurred. Please try again.');
+        messageEl.classList.remove('success');
+        messageEl.classList.add('error');
+    }
+</script>
+
+</body>
+</html>
